@@ -20,4 +20,4 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:20001/eureka,http://localhost:20002/eureka
-version: UserProvider01
+version: UserProvider01-update
