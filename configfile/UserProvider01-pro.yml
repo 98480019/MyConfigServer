@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: UserProvider
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/user?serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+server:
+  port: 20011
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 5
+  client:
+    service-url:
+      defaultZone: http://localhost:20001/eureka,http://localhost:20002/eureka
